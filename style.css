@@ -1,0 +1,134 @@
+
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Home Hero Section */
+.hero {
+    min-height: 570px;
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600')
+        center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 15px;
+}
+
+/* Inner Page Banner */
+.page-banner {
+    padding: 90px 15px;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1600')
+        center/cover no-repeat;
+}
+
+/* Section Titles */
+.section-title {
+    color: #198754;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Destination Cards */
+.destination-card,
+.package-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover,
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.destination-card img,
+.package-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 22px;
+}
+
+/* Adventure Section */
+.adventure {
+    background: #198754;
+}
+
+/* Contact Form */
+.contact-box {
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25,135,84,0.15);
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    background-color: #146c43;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .page-banner {
+        padding: 65px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
